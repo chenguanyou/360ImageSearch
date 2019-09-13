@@ -89,16 +89,16 @@ if __name__ == '__main__':
     url_str = wdkey_urlkey.get('url_str')
     print(wdkey_urlkey)
 
-    # 获取搜索到的图片
+    # 获取相识的图片
     if url_str != '':
         this_page_cont = set.thisnextpage(url_key=url_str)
         print('相识：', this_page_cont)
 
-    # 获取猜测图片
+    # 获取百科图片
     if keywd != '':
         ciace = set.caiceinfo(keywd)
         print('百科,', ciace)
 
-    # 获取相识图片
+    # 获取相同图片
     xiangshi = set.xiangshiimg(url_key=url_str)
     print('相同:', xiangshi)
